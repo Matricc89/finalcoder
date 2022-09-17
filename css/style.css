@@ -55,7 +55,7 @@ header nav ul li a{
     text-transform: uppercase;
 }
 
-header li a.active, li a:hover{
+header li a.active, header li a:hover{
     background: aqua;
     transition: .5s;
     
