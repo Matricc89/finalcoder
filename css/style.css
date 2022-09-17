@@ -1,0 +1,248 @@
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,900;1,300&family=Roboto+Slab:wght@200;400;900&display=swap');
+
+/*Reseteo*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos Nav Pantallas Grandes */
+header{
+    position: sticky;
+    top: 0;
+    background-image:linear-gradient(to right, rgb(247, 93, 126),rgba(247, 176, 117, 0.877)) ;
+}
+
+header nav{
+    height: 160px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 5px 50px;
+}
+
+.logo{
+    height: 150px;
+}
+
+header nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul li{
+    display: inline-block;
+    line-height: 160px;
+    margin: 0 5px;
+}
+
+header nav ul li a{
+    color: rgb(15, 15, 15);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+header li a.active, li a:hover{
+    background: aqua;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: antiquewhite;
+    float: right;
+    line-height: 160px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*Main inicio*/
+
+main{
+    background-image: url(../img/bodi2.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+main h2{
+    text-align: center;
+    padding: 30px;
+    font-style:italic;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.section1 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 45px;
+    
+}
+.section1 .section2 button{
+    
+    background-color:rgba(0, 255, 255, 0.952);
+    
+    
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.section1 button a{
+    color: rgb(1, 10, 19);
+    text-decoration: none;
+    font-weight: bolder;
+}
+.section2 button{
+    
+    margin-bottom: 35px;
+}
+
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-top: 25p;
+}
+
+.section2 img {
+    border-radius: 20px;
+}
+.section2 div h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+.section2 div p{
+    text-align: justify;
+    font-size: 14px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: rgb(247, 93, 126);
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+footer li{
+    color: black;
+    list-style: none;
+}
+
+
+footer ul a{
+    color: black;
+    text-decoration: none;
+    
+}
+footer ul a img{
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+.sideFooter1 h3{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.17em;
+}
+footer h3{
+    font-weight: bold;
+    font-size: 1.17em;
+    padding-top: 3px;
+    color: white;
+}
+.sideFooter2 ul li{
+    padding: 5px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* Media Pantallas pequeñas*/
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    header nav ul li a{
+        font-size: 16px;
+    }
+    .logo-footer{
+        display: block;
+    }
+    footer h3{
+        display: block;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    header ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image:linear-gradient(to right, rgb(247, 93, 126),rgba(247, 176, 117, 0.877)) ;
+        top: 158px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    header nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header nav ul li a{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    header li a:hover, header li a.active{
+        background: none;
+        color: rgb(45, 193, 204);
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+    .logo-footer{
+        display: none;
+    }
+    footer h3{
+        display: none;
+    }
+}
