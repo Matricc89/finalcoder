@@ -18,10 +18,11 @@ header{
     position: sticky;
     top: 0;
     background-image:linear-gradient(to right, rgb(247, 93, 126),rgba(247, 176, 117, 0.877)) ;
+    height: 160px;
 }
 
 header nav{
-    height: 160px;
+    /* height: 160px; */
     width: 100%;
 }
 
@@ -53,16 +54,17 @@ header nav ul li a{
     text-transform: uppercase;
 }
 
-header li a.active, li a:hover{
+/*header li a.active, li a:hover{
     background: aqua;
     transition: .5s;
-}
+    
+}*/
 
 .checkbtn{
     font-size: 30px;
     color: antiquewhite;
-    float: right;
-    line-height: 160px;
+    float: right; 
+    line-height: 160px; 
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -91,17 +93,15 @@ main h2{
 }
 main h1 {
     text-align: center;
-    width: 100%;
     font-weight: bold;
     font-style:normal;
-    font-size: 72px;
+    font-size: 45px;
+   
     
 }
 .section1 .section2 button{
     
     background-color:rgba(0, 255, 255, 0.952);
-    
-    
     margin-top: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -188,7 +188,7 @@ footer h3{
 
 /* Media Pantallas pequeñas*/
 
-@media (max-width: 952px){
+@media (max-width: 1024px){
     .enlace{
         padding-left: 20px;
     }
