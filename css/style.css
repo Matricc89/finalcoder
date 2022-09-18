@@ -19,8 +19,8 @@ body::-webkit-scrollbar{
     
 }
 body::-webkit-scrollbar-thumb{
-    background:rgb(247, 93, 126);
-    border-radius: 10px;
+    background:rgba(247, 176, 117, 0.877);
+    border-radius: 50px;
 }
 
 /* Estilos Nav Pantallas Grandes */
@@ -134,17 +134,27 @@ main h1 {
     margin-bottom:150px; 
 }
 .home2 img{
-    border-radius: 25px;
+    
     margin-bottom: 10px;
     margin-left: 15px;
+    box-sizing: 1px;
+    border-radius: 25px;
+    padding: 0;
+    -webkit-box-shadow: 0px 5px 26px 8px rgba(211, 47, 252, 0.66); -moz-box-shadow: 0px 8px 26px 8px rgba(254, 28, 243, 0.66); box-shadow: 0px 5px 26px 8px rgba(227, 11, 216, 0.66);  
 }
 .home2 button{
     
     background-color: rgba(0, 255, 255, 0.952);
     border-radius: 5px;
-    width: 100px;
+    width: 600px;
     margin-bottom: 25px;
     margin-left: 20px;
+}
+.home2 button:hover{
+    background: rgba(247, 176, 117, 0.877);
+    transition: .5s;
+    
+    
 }
 .home2 button a{
     color: black;
@@ -165,6 +175,12 @@ main h1 {
     border-radius: 5px;
     width: 100px;
     margin-bottom: 25px;
+    
+}
+.home3 button:hover{
+    background: rgba(247, 176, 117, 0.877);
+    transition: .5s;
+    
     
 }
 .home3 button a{
