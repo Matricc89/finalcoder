@@ -69,6 +69,7 @@ header li a.active, header li a:hover{
     background: aqua;
     transition: .5s;
     
+    
 }
 
 .checkbtn{
@@ -125,7 +126,7 @@ main h1 {
 }
 .banner img{
     border-radius: 20px;
-    margin-bottom:150px;
+    margin-bottom:150px; 
 }
 .home2 img{
     border-radius: 25px;
@@ -148,6 +149,7 @@ main h1 {
     
     height: 100%;
     position: relative;
+   
 }
 
 .tarjetaCarrusel{
@@ -342,6 +344,7 @@ footer h3{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 90;
         
     }
     header nav ul li{
@@ -399,6 +402,10 @@ footer h3{
     }
     .mobiH2{
         display: block;
+    }
+    .banner img{
+        border-radius: 20px;
+        margin-bottom:0; 
     }
 }
     
