@@ -181,8 +181,9 @@ main h1 {
     text-decoration: none;
 }
 .mobi i{
-    color: antiquewhite;
-    font-size: 25px;
+    color: rgb(250, 236, 217);
+    font-size: 35px;
+    font-weight: bold;
 }
 .mobi img{
     background-size: cover;
