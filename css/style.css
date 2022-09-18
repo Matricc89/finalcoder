@@ -13,6 +13,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*Scroll-Bar*/
+body::-webkit-scrollbar{
+   width: 20px;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background:rgb(247, 93, 126);
+    border-radius: 10px;
+}
+
 /* Estilos Nav Pantallas Grandes */
 header{
     position: sticky;
@@ -75,7 +85,7 @@ header li a.active, header li a:hover{
     display: none;
 }
 
-/*Main inicio*/
+/*Main global*/
 
 main{
     background-image: url(../img/bodi2.jpg);
@@ -96,10 +106,42 @@ main h1 {
     text-align: center;
     font-weight: bold;
     font-style:normal;
-    font-size: 45px;
-   
+    font-size: 55px;
+}
+
+/*Main Inicio*/
+
+.home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.home h1{
+    font-size: 55px;
     
 }
+.banner img{
+    border-radius: 20px;
+    margin-bottom:150px;
+}
+.home2 img{
+    border-radius: 25px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.home2 button{
+    background-color: rgba(0, 255, 255, 0.952);
+    border-radius: 5px;
+    width: 100px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+
+/*Main Productos*/
 .section1 .section2 button{
     
     background-color:rgba(0, 255, 255, 0.952);
@@ -142,6 +184,9 @@ main h1 {
     text-align: justify;
     font-size: 14px;
 }
+
+
+
 
 /*Footer*/
 
@@ -207,7 +252,7 @@ footer h3{
         width: 100%;
         font-weight: bold;
         font-style:normal;
-        font-size: 35px;
+        font-size: 45px;
         
     }
 }
@@ -257,3 +302,17 @@ footer h3{
         
     }
 }
+
+@media (max-width: 426px){
+    
+    .banner img{
+        border-radius: 20px;
+        margin-bottom:0;
+    }
+    .home2 img{
+        border-radius: 25px;
+        margin-bottom: 10px;
+        margin-left: 35px;
+    }
+}
+
