@@ -259,9 +259,10 @@ main h1 {
 .btn-mobi2 button{
     background-color: rgba(0, 255, 255, 0.952);
     border-radius: 5px;
-    width: 100px;
+    width: 220px;
     margin-bottom: 25px;
     margin-top: 25px;
+    margin-left: 25px;
 }
 
 .btn-mobi2 button a{
@@ -273,7 +274,8 @@ main h1 {
 .aside-mobi img{
     border-radius: 20px;
     height: 600px;
-    width: 320px;
+    width: 300px;
+    margin-left: 20px;
     
 }
 
