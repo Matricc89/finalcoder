@@ -122,8 +122,13 @@ main h1 {
 
 .home h1{
     font-size: 55px;
+    text-decoration: underline;
     
 }
+.home h3{
+    margin-left: 20px;
+}
+
 .banner img{
     border-radius: 20px;
     margin-bottom:150px; 
@@ -134,12 +139,42 @@ main h1 {
     margin-left: 15px;
 }
 .home2 button{
+    
     background-color: rgba(0, 255, 255, 0.952);
     border-radius: 5px;
     width: 100px;
     margin-bottom: 25px;
     margin-left: 20px;
 }
+.home2 button a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.home3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home3 button{
+    background-color: rgba(0, 255, 255, 0.952);
+    border-radius: 5px;
+    width: 100px;
+    margin-bottom: 25px;
+    
+}
+.home3 button a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+
 #conteItemsCarrusel{
     
     height: 400px;
@@ -149,6 +184,7 @@ main h1 {
     
     height: 100%;
     position: relative;
+    
    
 }
 
@@ -204,8 +240,30 @@ main h1 {
     font-weight: bold;
     padding-top: 25px;
 }
+.btn-mobi2 button{
+    background-color: rgba(0, 255, 255, 0.952);
+    border-radius: 5px;
+    width: 100px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.btn-mobi2 button a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+.aside-mobi img{
+    border-radius: 20px;
+    height: 600px;
+    width: 320px;
+    
+}
 
-
+.aside-mobi{
+    margin-left: 20px;
+}
 
 
 
@@ -330,6 +388,9 @@ footer h3{
     .mobiH2{
         display: none;
     }
+    .btn-mobi{
+        display: none;
+    }
 }
 
 @media (max-width: 858px){
@@ -345,13 +406,14 @@ footer h3{
         left: -100%;
         text-align: center;
         transition: all .5s;
-        z-index: 90;
+       
         
     }
     header nav ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
+        
     }
     header nav ul li a{
         font-size: 20px;
@@ -363,6 +425,7 @@ footer h3{
     }
     #check:checked ~ul{
         left: 0;
+       
     }
     .logo-footer{
         display: none;
@@ -378,6 +441,7 @@ footer h3{
         font-size: 30px;
         
     }
+   
 }
 
 @media (max-width: 1006px){
@@ -388,6 +452,9 @@ footer h3{
         display: none;
     }
     .mobiH2{
+        display: none;
+    }
+    .btn-mobi{
         display: none;
     }
 }
@@ -401,12 +468,20 @@ footer h3{
     .mobi{
         display: block;
     }
+    .btn-mobi{
+        display: block;
+    }
     .mobiH2{
         display: block;
     }
     .banner img{
         border-radius: 20px;
         margin-bottom:0; 
+    }
+}
+@media (min-width: 430px){
+    .aside-mobi{
+        display: none;
     }
 }
     
