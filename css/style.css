@@ -139,6 +139,72 @@ main h1 {
     margin-bottom: 25px;
     margin-left: 20px;
 }
+#conteItemsCarrusel{
+    
+    height: 400px;
+    overflow: hidden; 
+}
+.itemCarrusel{
+    
+    height: 100%;
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    background-color: aqua;
+    height: 100%;
+}
+
+.flechaCarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+#tarjetaCarrusel-1{
+    background-color: blueviolet;
+}
+#tarjetaCarrusel-2{
+    background-color: rgb(41, 11, 69);
+}
+#tarjetaCarrusel-3{
+    background-color: rgb(159, 143, 174);
+}
+
+.mobi a{
+    text-decoration: none;
+}
+.mobi i{
+    color: antiquewhite;
+    font-size: 25px;
+}
+.mobi img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.btn-mobi button{
+    background-color: rgba(0, 255, 255, 0.952);
+    border-radius: 5px;
+    width: 100px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.btn-mobi button a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+
+
+
 
 
 /*Main Productos*/
@@ -255,6 +321,12 @@ footer h3{
         font-size: 45px;
         
     }
+    .mobi{
+        display: none;
+    }
+    .mobiH2{
+        display: none;
+    }
 }
 
 @media (max-width: 858px){
@@ -270,6 +342,7 @@ footer h3{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        
     }
     header nav ul li{
         display: block;
@@ -303,16 +376,31 @@ footer h3{
     }
 }
 
-@media (max-width: 426px){
-    
-    .banner img{
-        border-radius: 20px;
-        margin-bottom:0;
+@media (max-width: 1006px){
+    .banner{
+        display: none;
     }
-    .home2 img{
-        border-radius: 25px;
-        margin-bottom: 10px;
-        margin-left: 35px;
+    .mobi{
+        display: none;
+    }
+    .mobiH2{
+        display: none;
     }
 }
+@media (max-width: 631px){
+    .banner{
+        display: block;
+    }
+    .home2{
+        display: none
+    }
+    .mobi{
+        display: block;
+    }
+    .mobiH2{
+        display: block;
+    }
+}
+    
+    
 
