@@ -62,11 +62,13 @@ header nav ul li a{
     font-weight: bold;
     padding: 7px 13px;
     border-radius: 20px;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
 header li a.active, header li a:hover{
     background: aqua;
+    color:black;
     transition: .5s;
     
     
@@ -367,6 +369,49 @@ main h1 {
 }
 .mainOutlet article img{
     border-radius: 20px;
+}
+
+/* Main Formulario Contacto*/
+
+.main-cont{
+    width: auto;
+    height: 100%;
+}
+
+.main-cont h1{
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+  
+    
+}
+.form1 label{
+    text-decoration: underline;
+    font-size: 25px;
+}
+.btn{
+    background-color: rgba(0, 255, 255, 0.952);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-color: rgba(0, 255, 255, 0.952);
+
+}
+.btn:hover{
+    background: rgba(247, 176, 117, 0.877);
+    transition: .5s;
+    color: black;
+    border-color: rgba(247, 176, 117, 0.877);
 }
 /*Footer*/
 
