@@ -334,7 +334,40 @@ main h1 {
     padding-bottom: 25px;
     padding-top: 25p;
 }
-
+.mainOutlet h1{
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.mainOutlet h2{
+    font-size: 34px;
+}
+.mainOutlet .bannerOut img{
+    width: 100%;
+}
+.mainOutlet button{
+    background-color: rgba(0, 255, 255, 0.952);
+    border-radius: 20px;
+    width: 100px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+}
+.mainOutlet button a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+.mainOutlet button:hover{
+    background: rgba(247, 176, 117, 0.877);
+    transition: .5s;
+    
+    
+}
+.mainOutlet article img{
+    border-radius: 20px;
+}
 /*Footer*/
 
 footer{
